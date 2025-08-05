@@ -1,1 +1,60 @@
+name: Bug Report
+description: Report a bug or problem in the HelloWorldTimey project
+title: "[BUG] <brief description>"
+labels: [bug, needs-triage]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting an issue! Please fill out the following details.
+        
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: Short summary of the bug
+      placeholder: "Clock doesn't update on screen"
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Describe the exact steps to reproduce the issue.
+      placeholder: |
+        1. Run the app
+        2. Wait 1 minute
+        3. Observe the clock not updating
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      placeholder: "Clock should update every second."
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      placeholder: "Clock remains static."
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - Windows
+        - macOS
+        - Linux
+        - Other
+
+  - type: checkboxes
+    id: accessibility
+    attributes:
+      label: Accessibility Impact
+      options:
+        - label: This affects screen reader users
+        - label: This affects keyboard navigation
+        - label: This causes visual layout problems
 
